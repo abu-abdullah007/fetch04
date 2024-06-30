@@ -9,7 +9,7 @@ const img_four = card.querySelector('#four')
 const button = card.querySelector('#mainBtn')
 
 async function getDataFromServer(){
-    const server_response = await fetch('http://127.0.0.1:5500/randomProjects/fetch04/api.json')
+    const server_response = await fetch('api.json')
     const receved_data = await server_response.json()
 
     myName.innerHTML = receved_data.name
